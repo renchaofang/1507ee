@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomView">
+        <attr name="radio" format="integer"></attr>
+        <attr name="backgroupcolor" format="color"></attr>
+        <attr name="secondcolor" format="color"></attr>
+        <attr name="speed" format="integer"></attr>
+    </declare-styleable>
+</resources>
