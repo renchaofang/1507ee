@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">\</FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:orientation="horizontal"
+        android:layout_weight="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+            <RadioButton
+                android:textSize="15dp"
+                android:button="@null"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="首页"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:id="@+id/shouye_btn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        <RadioButton
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:button="@null"
+            android:text="首页"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:id="@+id/tuijian_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="首页"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:id="@+id/wode_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+</LinearLayout>
