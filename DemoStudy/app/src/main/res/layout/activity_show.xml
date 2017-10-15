@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a1.demostudy.activity.ShowActivity">
+
+    <LinearLayout
+        android:background="#ff00"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+            <EditText
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_bg"
+                android:layout_weight="7"
+                android:hint="请输入搜索商品"
+                android:gravity="center"
+                android:id="@+id/suosou"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/ss"
+            android:text="搜索"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <CheckBox
+            android:id="@+id/qiehuan"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.bawei.swiperefreshlayoutlibrary.SwipyRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+    </com.bawei.swiperefreshlayoutlibrary.SwipyRefreshLayout>
+
+</LinearLayout>

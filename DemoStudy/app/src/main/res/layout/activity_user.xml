@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a1.demostudy.activity.UserActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:text="个人信息 "
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/tv"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp">
+    </View>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                        <TextView
+                            android:gravity="center"
+                            android:text="头像"
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+                        <View
+                            android:layout_weight="7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                        </View>
+
+                                <ImageView
+                                    android:layout_weight="2"
+                                    android:id="@+id/user_pick"
+                                    android:src="@mipmap/ic_launcher"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent" />
+
+                </LinearLayout>
+        <View
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:gravity="center"
+                android:text="用户名"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </View>
+            <TextView
+                android:id="@+id/username"
+                android:gravity="center"
+                android:text="123456"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:gravity="center"
+                android:text="呢陈"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </View>
+            <TextView
+                android:textSize="17dp"
+                android:gravity="center"
+                android:text="kson"
+                android:id="@+id/nicheng"
+                android:src="@mipmap/ic_launcher"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+<View
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+            <Button
+                android:id="@+id/back_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="退出登录" />
+            <Button
+                android:id="@+id/shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="跳转到商品" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
