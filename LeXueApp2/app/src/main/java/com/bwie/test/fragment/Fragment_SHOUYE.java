@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.bwie.test.R;
+
 /**
  * 1.类的用途
  * 2.@author1
@@ -14,12 +16,20 @@ import android.view.ViewGroup;
  */
 public class Fragment_SHOUYE extends Fragment {
 
+    private View view;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
+        if(view==null){
+            view = inflater.inflate(R.layout.shouye,container,false);
+        }
+        ViewGroup parent = (ViewGroup) view.getParent();
+        if(parent!=null){
+            parent.removeView(view);
+        }
+        return view;
     }
-
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
