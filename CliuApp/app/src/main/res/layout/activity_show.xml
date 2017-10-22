@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <FrameLayout
+       android:id="@+id/show_fragment"
+       android:layout_weight="9"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"></FrameLayout>
+     <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/group"
+        android:layout_weight="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+                <RadioButton
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="首页"
+                    android:textSize="15dp"
+                    android:drawableTop="@mipmap/ic_nav_home_press"
+                    android:id="@+id/radio_btn1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:text="发现"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/ic_nav_class"
+                    android:id="@+id/radio_btn2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:text="购物车"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/ic_nav_cart"
+                    android:id="@+id/radio_btn3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:text="我的"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/ic_nav_user"
+                    android:id="@+id/radio_btn4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </RadioGroup>
+
+    <!--<LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+            <test.bwie.com.cliuapp.view.CustomImage
+                android:layout_weight="1"
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:btn_image="@mipmap/ic_nav_home"
+                app:btn_text="12"
+                />
+        <test.bwie.com.cliuapp.view.CustomImage
+            android:layout_weight="1"
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+        <test.bwie.com.cliuapp.view.CustomImage
+            android:layout_weight="1"
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+        <test.bwie.com.cliuapp.view.CustomImage
+            android:layout_weight="1"
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>-->
+</LinearLayout>

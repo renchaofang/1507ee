@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_code_close"
+            android:id="@+id/user_back"
+            android:gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="“超”流登录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_marginTop="28dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            android:textSize="20dp"
+            android:text="账号"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    <EditText
+        android:hint="用户名/邮箱/手机号"
+        android:layout_weight="8"
+        android:id="@+id/user_info_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            android:textSize="20dp"
+            android:text="密码"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:hint="请输入密码"
+            android:layout_weight="8"
+            android:id="@+id/user_info_pass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:enabled="false"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_login_btn"
+        android:text="登录"
+        android:id="@+id/user_btn_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/phone_user_resgit"
+                android:text="手机快递注册"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <TextView
+                android:id="@+id/rember_user_resgit"
+                android:layout_alignParentRight="true"
+                android:text="忘记密码？"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
+
+

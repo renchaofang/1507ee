@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    >
+
+    <RelativeLayout
+        android:layout_weight="3.5"
+        android:background="@mipmap/dfdf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/s">
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:id="@+id/user_image"
+                android:src="@mipmap/ic_default_user_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="45dp" />
+        <TextView
+            android:id="@+id/login_resgit_user"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:text="登陆/注册>"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_image"
+            android:layout_toRightOf="@+id/user_image"
+            android:layout_toEndOf="@+id/user_image" />
+    </RelativeLayout>
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/user_group"
+        android:layout_weight="1.6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="未付款"
+            android:textSize="15dp"
+            android:drawableTop="@mipmap/ic_user_order_wait_pay"
+            android:id="@+id/user_btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:text="代发货"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_user_order_wait_drive"
+            android:id="@+id/user_btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:text="代收货"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_user_order_wait_receipt"
+            android:id="@+id/user_btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:text="待d评价"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_user_order_wait_comment"
+            android:id="@+id/user_btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:text="退款/货"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_user_order_wait_refund"
+            android:id="@+id/user_btn5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+
+<View
+    android:background="#cccc99"
+    android:layout_width="match_parent"
+    android:layout_height="5dp">
+</View>
+
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/user_group3"
+        android:layout_weight="1.6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="预存款"
+            android:textSize="15dp"
+            android:drawableTop="@mipmap/ic_user_property_money"
+            android:id="@+id/user___btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:text="充值卡"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_user_property_card"
+            android:id="@+id/user___btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:text="代金觉"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_user_property_vouchers"
+            android:id="@+id/user___btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:text="红包"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_user_property_red"
+            android:id="@+id/user___btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:text="积分"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_user_property_integral"
+            android:id="@+id/user___btn5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+    <View
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </View>
+
+</LinearLayout>

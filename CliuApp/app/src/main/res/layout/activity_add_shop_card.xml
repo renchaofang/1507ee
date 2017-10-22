@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:gravity="center_vertical"
+                android:text="返回"
+                android:id="@+id/show_shop_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        <TextView
+            android:textSize="22dp"
+            android:text="商品展示"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+<ImageView
+    android:id="@+id/show_shop_image"
+    android:layout_weight="5"
+    android:layout_width="match_parent"
+    android:layout_height="0dp" />
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="3.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_marginTop="25dp"
+        android:id="@+id/shop_show_gname"
+        android:textSize="15dp"
+        android:text="5645312186523"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#ff00"
+            android:layout_marginTop="25dp"
+            android:id="@+id/shop_show_jianshao"
+            android:textSize="15dp"
+            android:text="5645312186523"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#ff00"
+            android:layout_marginTop="25dp"
+            android:id="@+id/shop_show_price"
+            android:textSize="20dp"
+            android:text="5645312186523"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/group"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="店铺"
+            android:textSize="15dp"
+            android:drawableTop="@mipmap/ic_goods_store"
+            android:id="@+id/radio_btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:text="客服"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_goods_kefu"
+            android:id="@+id/radio_btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+        </RadioGroup>
+        <Button
+            android:background="#D2691E"
+            android:textSize="17dp"
+            android:text="立即购买"
+            android:id="@+id/show_shop_btn2"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:background="#ff00"
+            android:textSize="17dp"
+            android:text="加入购物车"
+            android:id="@+id/show_shop_btn"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>

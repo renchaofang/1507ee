@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="55dp"
+    >
+
+    <ImageView
+        android:id="@+id/shaoma_btn"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/saosao"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_weight="8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <EditText
+            android:textSize="14dp"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/ic_action_search"
+            android:background="@drawable/rounded_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/edt_operator_name"
+            android:hint=" 搜索一下"
+           />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/message_btn"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/message"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

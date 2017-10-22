@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#459BFE"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:clickable="true"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="取消"
+            android:layout_marginRight="10dp"
+            android:id="@+id/resgiter_iamge"/>
+            <TextView
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:text="'超'流注册"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <EditText
+                android:hint="请输入用户名  6-20位数字或英文 "
+                android:id="@+id/resgiter_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="请输入密码  6-20位数字或英文 "
+                android:id="@+id/resgiter_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+                <EditText
+                    android:hint="请确认密码"
+                    android:id="@+id/resgiter_angit_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="请输入邮箱"
+                    android:id="@+id/resgiter_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+             </LinearLayout>
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/reg_reg"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="注册"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="@drawable/xy_text"/>
+</LinearLayout>

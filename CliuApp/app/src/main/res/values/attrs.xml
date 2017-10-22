@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomImage">
+        <attr name="btn_image" format="reference|color"></attr>
+        <attr name="btn_text" format="integer"></attr>
+    </declare-styleable>
+</resources>
