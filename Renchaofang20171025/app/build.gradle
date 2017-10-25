@@ -29,4 +29,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:design:25.2.0'
     compile project(':ok')
+    compile project(':swiperefreshlayoutlibrary')
+    compile 'com.jude:rollviewpager:1.2.9'
+    compile 'com.squareup.picasso:picasso:2.5.1'
 }
