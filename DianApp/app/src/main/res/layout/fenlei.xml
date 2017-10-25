@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <TextView
+      android:background="@drawable/topbar_background"
+      android:gravity="center"
+      android:textSize="18dp"
+      android:text="商品分类"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+        </android.support.v7.widget.RecyclerView>
+        <View
+            android:background="#000"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"></View>
+
+        <FrameLayout
+            android:id="@+id/shop_fragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
