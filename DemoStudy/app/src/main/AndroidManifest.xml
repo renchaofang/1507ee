@@ -22,7 +22,8 @@
         <activity android:name=".activity.ResgitActivity" />
         <activity android:name=".activity.ShowActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".activity.PickActivity"></activity>
+        <activity android:name=".activity.PickActivity" />
+        <activity android:name=".DetailsActivity"></activity>
     </application>
 
 </manifest>
